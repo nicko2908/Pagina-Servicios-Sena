@@ -5,6 +5,7 @@ import { quasar, transformAssetUrls } from '@quasar/vite-plugin'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/Pagina-Servicios-Sena/',
   plugins: [vue({
       template: { transformAssetUrls }
     }),
@@ -14,4 +15,5 @@ export default defineConfig({
     quasar({
       sassVariables: join(import.meta.dirname, 'src/quasar-variables.sass')
     })],
+
 })
